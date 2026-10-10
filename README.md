@@ -15,7 +15,7 @@ This project builds a simulator of that problem and trains an RL agent that pick
 * **vs. the operator default (mmWave):** 68.6% vs 58.9% energy saved, *and* fewer late packets (5.1% vs 5.8%). RL beats the default on both axes at once.
 * **Tunable trade-off:** one reward weight (lambda) moves the agent from "maximum battery" to "strict QoS" (0.8% late packets).
 * **A debugging story:** the first agent failed under strict QoS. I traced the failure to *partial observability* (a paused VoIP call and an idle IoT sensor look identical within one window) and fixed it with history features, cutting VoIP violations from 7.5% to 1.0%.
-* **Engineering:** event-driven simulator, Gymnasium environment, 143 tests at 99% coverage, a conservation invariant that caught a real bug, CI on three Python versions, reproducible seeded experiments.
+* **Engineering:** event-driven simulator, Gymnasium environment, 143 tests at 98% coverage, a conservation invariant that caught a real bug, CI on three Python versions, reproducible seeded experiments.
 
 ## Quick start
 

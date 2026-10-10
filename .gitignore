@@ -9,3 +9,4 @@ runs/*
 !runs/fr1_lambda2/
 !runs/seed_robustness.md
 !runs/seed_robustness.jsonl
+.DS_Store

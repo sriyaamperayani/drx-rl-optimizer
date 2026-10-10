@@ -93,7 +93,7 @@ The active profile switches as a Markov chain (mean 8 windows per profile). This
 | Agents | Q-learning improves over its own early episodes; save/load round-trip; history features separate a paused call from an idle device |
 | Pipeline | The real CLI runs end to end and writes every artifact |
 
-143 tests, 99% line coverage, run in CI on Python 3.10, 3.11, and 3.12 together with ruff and a smoke run of the full pipeline.
+143 tests, 98% line coverage, run in CI on Python 3.10, 3.11, and 3.12 together with ruff and a smoke run of the full pipeline.
 
 ## Known limitations
 
