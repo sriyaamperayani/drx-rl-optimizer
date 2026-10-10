@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+runs/*
+!runs/fr2_lambda2/
+!runs/fr2_lambda5/
+!runs/fr1_lambda2/
+!runs/seed_robustness.md
+!runs/seed_robustness.jsonl

@@ -1,0 +1,1385 @@
+{
+  "config": {
+    "train_episodes": 5000,
+    "eval_episodes": 200,
+    "window_ms": 1000.0,
+    "episode_windows": 60,
+    "lambda_latency": 5.0,
+    "beam_search_ms": 4.0,
+    "seed": 0
+  },
+  "train_seconds": 110.1,
+  "best_static_config": "inact=200ms/cycle=160ms",
+  "reference": {
+    "name": "drx_off",
+    "mean_return": -62.235339999999994,
+    "energy_norm": 1.0372556666666668,
+    "violation_rate": 0.0,
+    "mean_latency_ms": 1.0152329215550844,
+    "p95_latency_ms": 1.0,
+    "per_profile": {
+      "gaming": {
+        "energy_norm": 1.0596519587628865,
+        "violation_rate": 0.0,
+        "mean_latency_ms": 1.0152117364853173,
+        "config_counts": {
+          "drx_off": 2425
+        }
+      },
+      "iot": {
+        "energy_norm": 1.0004023421162693,
+        "violation_rate": 0.0,
+        "mean_latency_ms": 1.0,
+        "config_counts": {
+          "drx_off": 2391
+        }
+      },
+      "video": {
+        "energy_norm": 1.0518325320512822,
+        "violation_rate": 0.0,
+        "mean_latency_ms": 1.0,
+        "config_counts": {
+          "drx_off": 2496
+        }
+      },
+      "voip": {
+        "energy_norm": 1.0628968570163788,
+        "violation_rate": 0.0,
+        "mean_latency_ms": 1.0000082056169604,
+        "config_counts": {
+          "drx_off": 2259
+        }
+      },
+      "web": {
+        "energy_norm": 1.0123474680938658,
+        "violation_rate": 0.0,
+        "mean_latency_ms": 1.1536582066513812,
+        "config_counts": {
+          "drx_off": 2429
+        }
+      }
+    },
+    "saving_pct": 0.0
+  },
+  "headline": [
+    {
+      "name": "operator_default",
+      "mean_return": -38.32282497473787,
+      "energy_norm": 0.42581859149253737,
+      "violation_rate": 0.058404972768810105,
+      "mean_latency_ms": 30.157848111751484,
+      "p95_latency_ms": 132.64417916047023,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.8688146678378987,
+          "violation_rate": 0.15612782006824807,
+          "mean_latency_ms": 18.03283398804491,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.14370614028186626,
+          "violation_rate": 0.069164265129683,
+          "mean_latency_ms": 77.13740976816807,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.23387803697425866,
+          "violation_rate": 0.0007477217851857621,
+          "mean_latency_ms": 71.78542881785383,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7351057556426566,
+          "violation_rate": 0.02246637780653874,
+          "mean_latency_ms": 3.571621212197533,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.170845065749317,
+          "violation_rate": 0.003774584464604993,
+          "mean_latency_ms": 34.30418881941011,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 58.947576265266264
+    },
+    {
+      "name": "best_static",
+      "mean_return": -32.20594831403045,
+      "energy_norm": 0.482231860618517,
+      "violation_rate": 0.013210045539540667,
+      "mean_latency_ms": 25.869969216086293,
+      "p95_latency_ms": 131.2236056393158,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0374800382800065,
+          "violation_rate": 0.017912837073224587,
+          "mean_latency_ms": 3.144350962942255,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.16528954022407744,
+          "violation_rate": 0.013353115727002967,
+          "mean_latency_ms": 76.73106562333753,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.27394754536868193,
+          "violation_rate": 0.00015550890288469014,
+          "mean_latency_ms": 74.05164427823844,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7599161558769469,
+          "violation_rate": 0.022323814882543255,
+          "mean_latency_ms": 3.6188815355544155,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.19566170216186318,
+          "violation_rate": 0.0032642728665645193,
+          "mean_latency_ms": 32.26331937384738,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 53.50887190925442
+    },
+    {
+      "name": "heuristic",
+      "mean_return": -29.083519460099556,
+      "energy_norm": 0.4477223843706031,
+      "violation_rate": 0.009220321391503526,
+      "mean_latency_ms": 18.18145530929943,
+      "p95_latency_ms": 61.82058509016214,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.7173422223164406,
+          "violation_rate": 0.022427167014642646,
+          "mean_latency_ms": 9.063108160043656,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 168,
+            "inact=10ms/cycle=20ms": 2155,
+            "inact=10ms/cycle=40ms": 85,
+            "inact=50ms/cycle=160ms": 17
+          }
+        },
+        "iot": {
+          "energy_norm": 0.27229660252024424,
+          "violation_rate": 0.010238907849829351,
+          "mean_latency_ms": 32.00611615720976,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 142,
+            "inact=50ms/cycle=80ms": 2156,
+            "inact=50ms/cycle=160ms": 13,
+            "inact=10ms/cycle=20ms": 80
+          }
+        },
+        "video": {
+          "energy_norm": 0.4267777018119298,
+          "violation_rate": 3.0945860217549396e-05,
+          "mean_latency_ms": 32.41299234722881,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 1300,
+            "inact=10ms/cycle=40ms": 1105,
+            "inact=10ms/cycle=20ms": 75,
+            "inact=50ms/cycle=160ms": 16
+          }
+        },
+        "voip": {
+          "energy_norm": 0.5564092712890256,
+          "violation_rate": 0.0035237075040875005,
+          "mean_latency_ms": 14.587577056177004,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 527,
+            "inact=10ms/cycle=40ms": 1515,
+            "inact=10ms/cycle=20ms": 208,
+            "inact=50ms/cycle=160ms": 9
+          }
+        },
+        "web": {
+          "energy_norm": 0.2716701766733139,
+          "violation_rate": 0.012032974338518814,
+          "mean_latency_ms": 17.288850382889535,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 1766,
+            "inact=50ms/cycle=160ms": 462,
+            "inact=10ms/cycle=40ms": 135,
+            "inact=10ms/cycle=20ms": 66
+          }
+        }
+      },
+      "saving_pct": 56.8358700020982
+    },
+    {
+      "name": "rl_q_learning",
+      "mean_return": -29.772610282819702,
+      "energy_norm": 0.4682265203816134,
+      "violation_rate": 0.007869189817921531,
+      "mean_latency_ms": 27.601940038977613,
+      "p95_latency_ms": 123.4875433952111,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.7568607856968381,
+          "violation_rate": 0.01305165357814401,
+          "mean_latency_ms": 7.971213131817123,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 115,
+            "inact=10ms/cycle=20ms": 1848,
+            "inact=100ms/cycle=20ms": 108,
+            "inact=50ms/cycle=160ms": 4,
+            "inact=10ms/cycle=40ms": 166,
+            "inact=200ms/cycle=160ms": 46,
+            "inact=50ms/cycle=20ms": 53,
+            "inact=100ms/cycle=160ms": 11,
+            "inact=100ms/cycle=40ms": 26,
+            "inact=200ms/cycle=40ms": 21,
+            "inact=200ms/cycle=20ms": 12,
+            "inact=50ms/cycle=80ms": 6,
+            "inact=10ms/cycle=80ms": 1,
+            "inact=50ms/cycle=320ms": 1,
+            "inact=100ms/cycle=80ms": 7
+          }
+        },
+        "iot": {
+          "energy_norm": 0.27003161028260436,
+          "violation_rate": 0.0017123287671232876,
+          "mean_latency_ms": 69.65232086029103,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 136,
+            "inact=200ms/cycle=40ms": 9,
+            "inact=10ms/cycle=20ms": 85,
+            "inact=200ms/cycle=160ms": 214,
+            "inact=200ms/cycle=80ms": 1585,
+            "inact=100ms/cycle=160ms": 316,
+            "inact=200ms/cycle=320ms": 5,
+            "inact=100ms/cycle=40ms": 23,
+            "inact=100ms/cycle=20ms": 7,
+            "inact=50ms/cycle=20ms": 1,
+            "inact=100ms/cycle=80ms": 5,
+            "inact=50ms/cycle=160ms": 2,
+            "inact=10ms/cycle=160ms": 1,
+            "inact=50ms/cycle=80ms": 1,
+            "inact=50ms/cycle=320ms": 1
+          }
+        },
+        "video": {
+          "energy_norm": 0.392555493303607,
+          "violation_rate": 6.197034718887012e-05,
+          "mean_latency_ms": 68.62265064150873,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 471,
+            "inact=100ms/cycle=160ms": 99,
+            "inact=200ms/cycle=160ms": 994,
+            "inact=100ms/cycle=40ms": 582,
+            "inact=200ms/cycle=320ms": 71,
+            "inact=10ms/cycle=40ms": 146,
+            "inact=10ms/cycle=20ms": 92,
+            "inact=100ms/cycle=320ms": 1,
+            "inact=50ms/cycle=160ms": 5,
+            "inact=100ms/cycle=20ms": 4,
+            "inact=50ms/cycle=320ms": 13,
+            "inact=200ms/cycle=40ms": 7,
+            "inact=200ms/cycle=20ms": 2,
+            "inact=10ms/cycle=80ms": 7,
+            "inact=100ms/cycle=80ms": 1,
+            "inact=50ms/cycle=80ms": 1
+          }
+        },
+        "voip": {
+          "energy_norm": 0.6186551767520085,
+          "violation_rate": 0.010235976571299842,
+          "mean_latency_ms": 12.520937142054345,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 183,
+            "inact=200ms/cycle=80ms": 252,
+            "inact=10ms/cycle=20ms": 469,
+            "inact=10ms/cycle=40ms": 1096,
+            "inact=200ms/cycle=40ms": 68,
+            "inact=100ms/cycle=80ms": 56,
+            "inact=200ms/cycle=20ms": 38,
+            "inact=100ms/cycle=160ms": 27,
+            "inact=100ms/cycle=20ms": 14,
+            "inact=50ms/cycle=320ms": 5,
+            "inact=100ms/cycle=40ms": 31,
+            "inact=200ms/cycle=320ms": 3,
+            "inact=50ms/cycle=80ms": 8,
+            "inact=50ms/cycle=160ms": 5,
+            "inact=100ms/cycle=320ms": 1,
+            "inact=10ms/cycle=160ms": 1,
+            "inact=50ms/cycle=20ms": 2
+          }
+        },
+        "web": {
+          "energy_norm": 0.3130196391561264,
+          "violation_rate": 0.005516049710905828,
+          "mean_latency_ms": 15.549247530900242,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 273,
+            "inact=200ms/cycle=80ms": 1544,
+            "inact=100ms/cycle=80ms": 80,
+            "inact=100ms/cycle=40ms": 75,
+            "inact=100ms/cycle=160ms": 41,
+            "inact=200ms/cycle=40ms": 107,
+            "inact=10ms/cycle=20ms": 75,
+            "inact=50ms/cycle=80ms": 81,
+            "inact=50ms/cycle=160ms": 37,
+            "inact=100ms/cycle=20ms": 2,
+            "inact=10ms/cycle=160ms": 3,
+            "inact=50ms/cycle=20ms": 4,
+            "inact=10ms/cycle=40ms": 79,
+            "inact=200ms/cycle=320ms": 3,
+            "inact=50ms/cycle=320ms": 2,
+            "inact=10ms/cycle=80ms": 14,
+            "inact=50ms/cycle=40ms": 2,
+            "inact=200ms/cycle=20ms": 3,
+            "inact=10ms/cycle=320ms": 3,
+            "inact=100ms/cycle=320ms": 1
+          }
+        }
+      },
+      "saving_pct": 54.85910220319066
+    }
+  ],
+  "fixed": [
+    {
+      "name": "inact=10ms/cycle=20ms",
+      "mean_return": -46.39962616204321,
+      "energy_norm": 0.7727325323405245,
+      "violation_rate": 7.604834885614337e-05,
+      "mean_latency_ms": 6.795924012815201,
+      "p95_latency_ms": 18.04178625068979,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.731682532394469,
+          "violation_rate": 0.00022128177467983293,
+          "mean_latency_ms": 7.525159175840467,
+          "config_counts": {
+            "inact=10ms/cycle=20ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.7688461356310884,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 5.137516124421197,
+          "config_counts": {
+            "inact=10ms/cycle=20ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.8248881602032361,
+          "violation_rate": 1.5452606854776402e-05,
+          "mean_latency_ms": 4.507954458166515,
+          "config_counts": {
+            "inact=10ms/cycle=20ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7528605658678691,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 8.526521891099298,
+          "config_counts": {
+            "inact=10ms/cycle=20ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.7824274477451547,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 5.018705564919837,
+          "config_counts": {
+            "inact=10ms/cycle=20ms": 2429
+          }
+        }
+      },
+      "saving_pct": 25.502211540209363
+    },
+    {
+      "name": "inact=10ms/cycle=40ms",
+      "mean_return": -34.319873659279494,
+      "energy_norm": 0.49627573364887123,
+      "violation_rate": 0.023411670491810612,
+      "mean_latency_ms": 16.02127786763656,
+      "p95_latency_ms": 37.28619077953044,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.49338874843081115,
+          "violation_rate": 0.07212470236447201,
+          "mean_latency_ms": 17.433876212432462,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.4639244006849003,
+          "violation_rate": 0.005405405405405406,
+          "mean_latency_ms": 15.967182029728239,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.528260271344578,
+          "violation_rate": 9.270131635869229e-05,
+          "mean_latency_ms": 13.291818964933356,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.5137746615914953,
+          "violation_rate": 7.047613678008626e-05,
+          "mean_latency_ms": 18.047073057974565,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.4818621856701878,
+          "violation_rate": 0.000597609561752988,
+          "mean_latency_ms": 11.434890191687321,
+          "config_counts": {
+            "inact=10ms/cycle=40ms": 2429
+          }
+        }
+      },
+      "saving_pct": 52.154926736268706
+    },
+    {
+      "name": "inact=10ms/cycle=80ms",
+      "mean_return": -67.64642593729316,
+      "energy_norm": 0.2887437085964781,
+      "violation_rate": 0.27689807539922373,
+      "mean_latency_ms": 35.7563162469639,
+      "p95_latency_ms": 76.60750370194137,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.320719747280521,
+          "violation_rate": 0.4628055628735043,
+          "mean_latency_ms": 37.478686483708316,
+          "config_counts": {
+            "inact=10ms/cycle=80ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.2378569537097769,
+          "violation_rate": 0.16475095785440613,
+          "mean_latency_ms": 44.00525622382448,
+          "config_counts": {
+            "inact=10ms/cycle=80ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.30811103906113896,
+          "violation_rate": 0.0018606093495619816,
+          "mean_latency_ms": 32.34762789397442,
+          "config_counts": {
+            "inact=10ms/cycle=80ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.3208902025008499,
+          "violation_rate": 0.3970941232950213,
+          "mean_latency_ms": 38.47018644556397,
+          "config_counts": {
+            "inact=10ms/cycle=80ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.25711281133650654,
+          "violation_rate": 0.006666666666666667,
+          "mean_latency_ms": 28.95523745321319,
+          "config_counts": {
+            "inact=10ms/cycle=80ms": 2429
+          }
+        }
+      },
+      "saving_pct": 72.16272536505997
+    },
+    {
+      "name": "inact=10ms/cycle=160ms",
+      "mean_return": -91.09166160927707,
+      "energy_norm": 0.18134074017749352,
+      "violation_rate": 0.44321281255458367,
+      "mean_latency_ms": 76.30440993420355,
+      "p95_latency_ms": 155.52199236417437,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.21939001838240008,
+          "violation_rate": 0.7085398451857214,
+          "mean_latency_ms": 77.29107426270346,
+          "config_counts": {
+            "inact=10ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.12509635597074384,
+          "violation_rate": 0.3627730294396961,
+          "mean_latency_ms": 97.08230694373104,
+          "config_counts": {
+            "inact=10ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.1981894679026931,
+          "violation_rate": 0.005229607624706028,
+          "mean_latency_ms": 72.99081585160457,
+          "config_counts": {
+            "inact=10ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.22156432609132234,
+          "violation_rate": 0.6562025890793597,
+          "mean_latency_ms": 80.78746578955136,
+          "config_counts": {
+            "inact=10ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.14399669654225375,
+          "violation_rate": 0.07007414211665901,
+          "mean_latency_ms": 63.52562123909833,
+          "config_counts": {
+            "inact=10ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 82.51725721969285
+    },
+    {
+      "name": "inact=10ms/cycle=320ms",
+      "mean_return": -110.47887225563052,
+      "energy_norm": 0.1259974744932405,
+      "violation_rate": 0.5626297081538524,
+      "mean_latency_ms": 155.16907974912422,
+      "p95_latency_ms": 304.1784964953576,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.16154808621170602,
+          "violation_rate": 0.843282851589266,
+          "mean_latency_ms": 156.57582523034722,
+          "config_counts": {
+            "inact=10ms/cycle=320ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.06917275782502054,
+          "violation_rate": 0.5457354758961681,
+          "mean_latency_ms": 195.56718929843382,
+          "config_counts": {
+            "inact=10ms/cycle=320ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.14266033432074465,
+          "violation_rate": 0.01084446386218949,
+          "mean_latency_ms": 155.73275938837864,
+          "config_counts": {
+            "inact=10ms/cycle=320ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.17092064131999923,
+          "violation_rate": 0.8047663217980735,
+          "mean_latency_ms": 155.15617162318847,
+          "config_counts": {
+            "inact=10ms/cycle=320ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.08753956265517421,
+          "violation_rate": 0.45839924074659916,
+          "mean_latency_ms": 142.44003949894326,
+          "config_counts": {
+            "inact=10ms/cycle=320ms": 2429
+          }
+        }
+      },
+      "saving_pct": 87.85280442013423
+    },
+    {
+      "name": "inact=50ms/cycle=20ms",
+      "mean_return": -51.70462551023453,
+      "energy_norm": 0.8611491881437131,
+      "violation_rate": 7.604528720515676e-05,
+      "mean_latency_ms": 2.82931955440899,
+      "p95_latency_ms": 11.53163160213694,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.9483897579768753,
+          "violation_rate": 0.00022120223414256483,
+          "mean_latency_ms": 3.235129322688932,
+          "config_counts": {
+            "inact=50ms/cycle=20ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.7709258642893605,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 4.829616009926142,
+          "config_counts": {
+            "inact=50ms/cycle=20ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.8290051291575852,
+          "violation_rate": 1.5458100817733532e-05,
+          "mean_latency_ms": 4.619049887075777,
+          "config_counts": {
+            "inact=50ms/cycle=20ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.9767627682444476,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.0472634741054423,
+          "config_counts": {
+            "inact=50ms/cycle=20ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.7883727695649376,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.5289108517002237,
+          "config_counts": {
+            "inact=50ms/cycle=20ms": 2429
+          }
+        }
+      },
+      "saving_pct": 16.978116792448184
+    },
+    {
+      "name": "inact=50ms/cycle=40ms",
+      "mean_return": -40.03813178339838,
+      "energy_norm": 0.6364431428159402,
+      "violation_rate": 0.009282081333398941,
+      "mean_latency_ms": 7.156732609647116,
+      "p95_latency_ms": 30.023441192036234,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.8350918165406627,
+          "violation_rate": 0.028568662969979397,
+          "mean_latency_ms": 7.553641760149657,
+          "config_counts": {
+            "inact=50ms/cycle=40ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.46895321529986356,
+          "violation_rate": 0.007905138339920948,
+          "mean_latency_ms": 14.70905047052446,
+          "config_counts": {
+            "inact=50ms/cycle=40ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.5379132962462608,
+          "violation_rate": 3.093102381688834e-05,
+          "mean_latency_ms": 14.104781347292827,
+          "config_counts": {
+            "inact=50ms/cycle=40ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.8635463384126687,
+          "violation_rate": 2.8151171792525865e-05,
+          "mean_latency_ms": 1.185361676568865,
+          "config_counts": {
+            "inact=50ms/cycle=40ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.49303011732948393,
+          "violation_rate": 6.657346381732241e-05,
+          "mean_latency_ms": 3.325460702974882,
+          "config_counts": {
+            "inact=50ms/cycle=40ms": 2429
+          }
+        }
+      },
+      "saving_pct": 38.64163260141842
+    },
+    {
+      "name": "inact=50ms/cycle=80ms",
+      "mean_return": -43.117482320018695,
+      "energy_norm": 0.4571804116893901,
+      "violation_rate": 0.07558337210550803,
+      "mean_latency_ms": 17.251333269636596,
+      "p95_latency_ms": 67.71586902601919,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.6952619049913307,
+          "violation_rate": 0.22800016627177122,
+          "mean_latency_ms": 18.997283195967206,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.24504871564919695,
+          "violation_rate": 0.0832,
+          "mean_latency_ms": 38.640544353716216,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.32201956648880153,
+          "violation_rate": 0.00046490004649000463,
+          "mean_latency_ms": 33.54025824784944,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7749315068621924,
+          "violation_rate": 0.004833768934603602,
+          "mean_latency_ms": 1.8231532718107046,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.2716806214877459,
+          "violation_rate": 0.000931098696461825,
+          "mean_latency_ms": 11.096925170437828,
+          "config_counts": {
+            "inact=50ms/cycle=80ms": 2429
+          }
+        }
+      },
+      "saving_pct": 55.92403817290401
+    },
+    {
+      "name": "inact=50ms/cycle=160ms",
+      "mean_return": -52.21701272911859,
+      "energy_norm": 0.34554189216433506,
+      "violation_rate": 0.1532232433424503,
+      "mean_latency_ms": 39.86752596340094,
+      "p95_latency_ms": 141.7507875280976,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.5297302877069203,
+          "violation_rate": 0.4436698929359977,
+          "mean_latency_ms": 48.72420195748146,
+          "config_counts": {
+            "inact=50ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.1331891308394618,
+          "violation_rate": 0.11473272490221642,
+          "mean_latency_ms": 89.31557482539951,
+          "config_counts": {
+            "inact=50ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.21369060966517262,
+          "violation_rate": 0.001647933087698024,
+          "mean_latency_ms": 70.06808425957,
+          "config_counts": {
+            "inact=50ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.719263223666645,
+          "violation_rate": 0.027611196157465275,
+          "mean_latency_ms": 4.09691537969897,
+          "config_counts": {
+            "inact=50ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.15861019450735453,
+          "violation_rate": 0.007887585338370784,
+          "mean_latency_ms": 35.13907181532472,
+          "config_counts": {
+            "inact=50ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 66.68691208265255
+    },
+    {
+      "name": "inact=50ms/cycle=320ms",
+      "mean_return": -68.28807638386702,
+      "energy_norm": 0.27157805325075324,
+      "violation_rate": 0.24998992048381677,
+      "mean_latency_ms": 91.97901904351805,
+      "p95_latency_ms": 289.52151485089195,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.37650867500047963,
+          "violation_rate": 0.6353326367119471,
+          "mean_latency_ms": 118.74114163571235,
+          "config_counts": {
+            "inact=50ms/cycle=320ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.07772239984955169,
+          "violation_rate": 0.18006182380216385,
+          "mean_latency_ms": 200.49638726966424,
+          "config_counts": {
+            "inact=50ms/cycle=320ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.15835658573767425,
+          "violation_rate": 0.003811903895734147,
+          "mean_latency_ms": 146.39079143348582,
+          "config_counts": {
+            "inact=50ms/cycle=320ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.6735899347381806,
+          "violation_rate": 0.07302313259059916,
+          "mean_latency_ms": 13.607624913066186,
+          "config_counts": {
+            "inact=50ms/cycle=320ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.10011162763186995,
+          "violation_rate": 0.2952155625657203,
+          "mean_latency_ms": 99.81373010446093,
+          "config_counts": {
+            "inact=50ms/cycle=320ms": 2429
+          }
+        }
+      },
+      "saving_pct": 73.81763609703877
+    },
+    {
+      "name": "inact=100ms/cycle=20ms",
+      "mean_return": -52.908898819641564,
+      "energy_norm": 0.8812204099671636,
+      "violation_rate": 7.604460687174854e-05,
+      "mean_latency_ms": 2.2176797751595374,
+      "p95_latency_ms": 9.872055797861321,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0328654749289505,
+          "violation_rate": 0.00022116554240849277,
+          "mean_latency_ms": 1.5486147675716642,
+          "config_counts": {
+            "inact=100ms/cycle=20ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.7737865905788968,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 4.396453647561565,
+          "config_counts": {
+            "inact=100ms/cycle=20ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.8344290709358422,
+          "violation_rate": 1.545881770962157e-05,
+          "mean_latency_ms": 4.407468489871929,
+          "config_counts": {
+            "inact=100ms/cycle=20ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.9802139851054232,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.042530706257695,
+          "config_counts": {
+            "inact=100ms/cycle=20ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.7915949161877734,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.496669127973211,
+          "config_counts": {
+            "inact=100ms/cycle=20ms": 2429
+          }
+        }
+      },
+      "saving_pct": 15.04308549125014
+    },
+    {
+      "name": "inact=100ms/cycle=40ms",
+      "mean_return": -41.10873010674965,
+      "energy_norm": 0.6770435326000241,
+      "violation_rate": 0.002290387084364082,
+      "mean_latency_ms": 5.309254800676674,
+      "p95_latency_ms": 26.63800700221327,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0016124765473031,
+          "violation_rate": 0.007036898787552016,
+          "mean_latency_ms": 2.678583160996397,
+          "config_counts": {
+            "inact=100ms/cycle=40ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.47563671999462076,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 12.814144574326175,
+          "config_counts": {
+            "inact=100ms/cycle=40ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.5503433460475414,
+          "violation_rate": 3.094203010659529e-05,
+          "mean_latency_ms": 13.163195624304254,
+          "config_counts": {
+            "inact=100ms/cycle=40ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.871739202148994,
+          "violation_rate": 1.4076180287717125e-05,
+          "mean_latency_ms": 1.1654305593963559,
+          "config_counts": {
+            "inact=100ms/cycle=40ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.5003906499286541,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 3.5298010860137174,
+          "config_counts": {
+            "inact=100ms/cycle=40ms": 2429
+          }
+        }
+      },
+      "saving_pct": 34.72742021494308
+    },
+    {
+      "name": "inact=100ms/cycle=80ms",
+      "mean_return": -36.2258978880752,
+      "energy_norm": 0.5189790026502576,
+      "violation_rate": 0.022774345645765207,
+      "mean_latency_ms": 12.95665718042097,
+      "p95_latency_ms": 62.13866786917788,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.9520699993055156,
+          "violation_rate": 0.06613182101113493,
+          "mean_latency_ms": 6.209590430580402,
+          "config_counts": {
+            "inact=100ms/cycle=80ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.25422848879566234,
+          "violation_rate": 0.02912621359223301,
+          "mean_latency_ms": 34.80596183842459,
+          "config_counts": {
+            "inact=100ms/cycle=80ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.33965268917427766,
+          "violation_rate": 0.00018573263786778933,
+          "mean_latency_ms": 33.14658327621912,
+          "config_counts": {
+            "inact=100ms/cycle=80ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7868873859893968,
+          "violation_rate": 0.003868444744541976,
+          "mean_latency_ms": 1.6925205629934028,
+          "config_counts": {
+            "inact=100ms/cycle=80ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.2823245161168152,
+          "violation_rate": 0.0005321271783956366,
+          "mean_latency_ms": 11.14880880454764,
+          "config_counts": {
+            "inact=100ms/cycle=80ms": 2429
+          }
+        }
+      },
+      "saving_pct": 49.96614438192921
+    },
+    {
+      "name": "inact=100ms/cycle=160ms",
+      "mean_return": -38.32282497473787,
+      "energy_norm": 0.42581859149253737,
+      "violation_rate": 0.058404972768810105,
+      "mean_latency_ms": 30.157848111751484,
+      "p95_latency_ms": 132.64417916047023,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.8688146678378987,
+          "violation_rate": 0.15612782006824807,
+          "mean_latency_ms": 18.03283398804491,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.14370614028186626,
+          "violation_rate": 0.069164265129683,
+          "mean_latency_ms": 77.13740976816807,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.23387803697425866,
+          "violation_rate": 0.0007477217851857621,
+          "mean_latency_ms": 71.78542881785383,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7351057556426566,
+          "violation_rate": 0.02246637780653874,
+          "mean_latency_ms": 3.571621212197533,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.170845065749317,
+          "violation_rate": 0.003774584464604993,
+          "mean_latency_ms": 34.30418881941011,
+          "config_counts": {
+            "inact=100ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 58.947576265266264
+    },
+    {
+      "name": "inact=100ms/cycle=320ms",
+      "mean_return": -51.02256703448289,
+      "energy_norm": 0.3576185156196204,
+      "violation_rate": 0.13879597913448408,
+      "mean_latency_ms": 71.98045978604763,
+      "p95_latency_ms": 278.540558693363,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 0.7405568060163574,
+          "violation_rate": 0.29555177140009137,
+          "mean_latency_ms": 55.324422476188126,
+          "config_counts": {
+            "inact=100ms/cycle=320ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.08869235573740106,
+          "violation_rate": 0.09745762711864407,
+          "mean_latency_ms": 192.55202093811175,
+          "config_counts": {
+            "inact=100ms/cycle=320ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.17910171733320532,
+          "violation_rate": 0.0016877099686340693,
+          "mean_latency_ms": 149.01230386421838,
+          "config_counts": {
+            "inact=100ms/cycle=320ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.6911186665993834,
+          "violation_rate": 0.06463973692644251,
+          "mean_latency_ms": 13.095711401683598,
+          "config_counts": {
+            "inact=100ms/cycle=320ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.11331146807985325,
+          "violation_rate": 0.31205211726384363,
+          "mean_latency_ms": 101.20850506630876,
+          "config_counts": {
+            "inact=100ms/cycle=320ms": 2429
+          }
+        }
+      },
+      "saving_pct": 65.52262599163558
+    },
+    {
+      "name": "inact=200ms/cycle=20ms",
+      "mean_return": -53.56029006746686,
+      "energy_norm": 0.8920769307642518,
+      "violation_rate": 7.604460687174854e-05,
+      "mean_latency_ms": 2.0597486199676407,
+      "p95_latency_ms": 9.35513152362364,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0572237969293257,
+          "violation_rate": 0.00022115637137683664,
+          "mean_latency_ms": 1.0795121293236916,
+          "config_counts": {
+            "inact=200ms/cycle=20ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.7795996395612254,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 4.354643053188919,
+          "config_counts": {
+            "inact=200ms/cycle=20ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.8450898092847898,
+          "violation_rate": 1.545881770962157e-05,
+          "mean_latency_ms": 4.386150773726146,
+          "config_counts": {
+            "inact=200ms/cycle=20ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.9868150293719272,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.0399318673668223,
+          "config_counts": {
+            "inact=200ms/cycle=20ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.7980952688762856,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.5110258586600664,
+          "config_counts": {
+            "inact=200ms/cycle=20ms": 2429
+          }
+        }
+      },
+      "saving_pct": 13.996427358065212
+    },
+    {
+      "name": "inact=200ms/cycle=40ms",
+      "mean_return": -42.149090908633696,
+      "energy_norm": 0.7013524143487421,
+      "violation_rate": 0.0002281440259815785,
+      "mean_latency_ms": 4.900398429649801,
+      "p95_latency_ms": 26.21007591534658,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0536774946220941,
+          "violation_rate": 0.0006910467976891395,
+          "mean_latency_ms": 1.199576256839097,
+          "config_counts": {
+            "inact=200ms/cycle=40ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.4890174202737409,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 13.884282415917307,
+          "config_counts": {
+            "inact=200ms/cycle=40ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.5752157676384496,
+          "violation_rate": 1.547053636349572e-05,
+          "mean_latency_ms": 13.447466106671,
+          "config_counts": {
+            "inact=200ms/cycle=40ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.8869134861847038,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 1.1651264932831285,
+          "config_counts": {
+            "inact=200ms/cycle=40ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.5156625255393155,
+          "violation_rate": 0.0,
+          "mean_latency_ms": 3.3144766275641837,
+          "config_counts": {
+            "inact=200ms/cycle=40ms": 2429
+          }
+        }
+      },
+      "saving_pct": 32.38384355106838
+    },
+    {
+      "name": "inact=200ms/cycle=80ms",
+      "mean_return": -34.412158911136636,
+      "energy_norm": 0.5579537483826532,
+      "violation_rate": 0.0033333482476431663,
+      "mean_latency_ms": 11.610852071495517,
+      "p95_latency_ms": 61.53252812424034,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.048126035118678,
+          "violation_rate": 0.006288873531444368,
+          "mean_latency_ms": 1.5613548312411119,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.27327097752319507,
+          "violation_rate": 0.0017730496453900709,
+          "mean_latency_ms": 34.91541723673271,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.3748491113238591,
+          "violation_rate": 3.1000062000124e-05,
+          "mean_latency_ms": 33.95442318558281,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.8084374943399801,
+          "violation_rate": 0.003955406660848512,
+          "mean_latency_ms": 1.6525517050871141,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.3040200727018187,
+          "violation_rate": 0.0003992812936713915,
+          "mean_latency_ms": 10.271735229354148,
+          "config_counts": {
+            "inact=200ms/cycle=80ms": 2429
+          }
+        }
+      },
+      "saving_pct": 46.208657487917336
+    },
+    {
+      "name": "inact=200ms/cycle=160ms",
+      "mean_return": -32.20594831403045,
+      "energy_norm": 0.482231860618517,
+      "violation_rate": 0.013210045539540667,
+      "mean_latency_ms": 25.869969216086293,
+      "p95_latency_ms": 131.2236056393158,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0374800382800065,
+          "violation_rate": 0.017912837073224587,
+          "mean_latency_ms": 3.144350962942255,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.16528954022407744,
+          "violation_rate": 0.013353115727002967,
+          "mean_latency_ms": 76.73106562333753,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.27394754536868193,
+          "violation_rate": 0.00015550890288469014,
+          "mean_latency_ms": 74.05164427823844,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7599161558769469,
+          "violation_rate": 0.022323814882543255,
+          "mean_latency_ms": 3.6188815355544155,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.19566170216186318,
+          "violation_rate": 0.0032642728665645193,
+          "mean_latency_ms": 32.26331937384738,
+          "config_counts": {
+            "inact=200ms/cycle=160ms": 2429
+          }
+        }
+      },
+      "saving_pct": 53.50887190925442
+    },
+    {
+      "name": "inact=200ms/cycle=320ms",
+      "mean_return": -38.646653223771224,
+      "energy_norm": 0.43714150728557355,
+      "violation_rate": 0.05273949910906958,
+      "mean_latency_ms": 58.97463572041243,
+      "p95_latency_ms": 273.83147434933966,
+      "per_profile": {
+        "gaming": {
+          "energy_norm": 1.0170114712864375,
+          "violation_rate": 0.0402030039091969,
+          "mean_latency_ms": 9.679515243962497,
+          "config_counts": {
+            "inact=200ms/cycle=320ms": 2425
+          }
+        },
+        "iot": {
+          "energy_norm": 0.11111336654545242,
+          "violation_rate": 0.041237113402061855,
+          "mean_latency_ms": 170.70771266361055,
+          "config_counts": {
+            "inact=200ms/cycle=320ms": 2391
+          }
+        },
+        "video": {
+          "energy_norm": 0.22208215419917465,
+          "violation_rate": 0.00038109756097560977,
+          "mean_latency_ms": 159.12426335531592,
+          "config_counts": {
+            "inact=200ms/cycle=320ms": 2496
+          }
+        },
+        "voip": {
+          "energy_norm": 0.7180678953887364,
+          "violation_rate": 0.06264439434884274,
+          "mean_latency_ms": 11.847065210563153,
+          "config_counts": {
+            "inact=200ms/cycle=320ms": 2259
+          }
+        },
+        "web": {
+          "energy_norm": 0.13888051773684662,
+          "violation_rate": 0.28722907635878625,
+          "mean_latency_ms": 94.5479984109381,
+          "config_counts": {
+            "inact=200ms/cycle=320ms": 2429
+          }
+        }
+      },
+      "saving_pct": 57.85595380834361
+    }
+  ]
+}

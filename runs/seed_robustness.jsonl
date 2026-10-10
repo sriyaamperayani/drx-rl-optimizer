@@ -1,0 +1,6 @@
+{"lambda": 2.0, "beam_search_ms": 4.0, "seed": 0, "return": -23.82335725833593, "saving_pct": 68.56770148290661, "violation_pct": 5.13629508299433}
+{"lambda": 2.0, "beam_search_ms": 4.0, "seed": 1, "return": -23.064293788770414, "saving_pct": 68.41005236306941, "violation_pct": 4.276031763784811}
+{"lambda": 2.0, "beam_search_ms": 4.0, "seed": 2, "return": -24.330652496595928, "saving_pct": 68.91682647581679, "violation_pct": 6.39139461626575}
+{"lambda": 5.0, "beam_search_ms": 4.0, "seed": 0, "return": -29.772610282819702, "saving_pct": 54.85910220319066, "violation_pct": 0.7869189817921531}
+{"lambda": 5.0, "beam_search_ms": 4.0, "seed": 1, "return": -29.272928739876658, "saving_pct": 57.19123368695793, "violation_pct": 1.2181864545539953}
+{"lambda": 5.0, "beam_search_ms": 4.0, "seed": 2, "return": -31.308634341364737, "saving_pct": 52.18406851713626, "violation_pct": 0.7215936796804051}
